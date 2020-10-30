@@ -17,7 +17,8 @@ function calculateResult(calculationType){
         calculationType === 'ADD' || 
         calculationType === 'SUBTRACT' ||
         calculationType === 'MULTIPLY' ||
-        calculationType === 'DIVIDE'
+        calculationType === 'DIVIDE' ||
+        calculationType === 'SUM'
     ){
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
@@ -34,6 +35,8 @@ function calculateResult(calculationType){
     }else if(calculationType == 'MULTIPLY'){
         currentResult *= enteredNumber;
         mathOperator = '*'
+    }else if (calculationType === 'SUM'){
+        mathOperator = '='
     }
 
     createAndWriteOutput(mathOperator, initialResult, enteredNumber );
