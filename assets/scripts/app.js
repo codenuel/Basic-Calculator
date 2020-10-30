@@ -58,6 +58,10 @@ function multiply(){
     calculateResult('MULTIPLY')
 }
 
+function equalTo(){
+    calculateResult('SUM')
+}
+
 
 addBtn.addEventListener('click', add);
 divideBtn.addEventListener('click', divide);
