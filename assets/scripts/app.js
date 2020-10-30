@@ -63,5 +63,5 @@ addBtn.addEventListener('click', add);
 divideBtn.addEventListener('click', divide);
 subtractBtn.addEventListener('click', subtract);
 multiplyBtn.addEventListener('click', multiply);
-// answerBtn.addEventListener('click', equalTo)
+answerBtn.addEventListener('click', equalTo)
 
